@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Counter4F.Controls"
+             x:Class="Counter4F.MainPage">
+    <ScrollView>
+        <VerticalStackLayout
+            x:Name="LayoutName"
+            Padding="30,0"
+            Spacing="25">
+
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Entry x:Name="CounterTitle"
+                       Text="Nazwa"
+                       WidthRequest="200"/>
+                <Button Text="Dodaj Licznik"
+                        Clicked="NewCounter"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>

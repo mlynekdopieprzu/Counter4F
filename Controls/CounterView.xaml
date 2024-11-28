@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Counter4F.Controls.CounterView"
+             x:Name="this">
+    <Border
+       HorizontalOptions="Center"
+       Padding="30"
+       Stroke="Black"
+       >
+        <VerticalStackLayout>
+            <Label
+               x:Name="CounterTitle"
+               Text="Name"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                FontSize="Medium"
+               />
+            <HorizontalStackLayout
+                Spacing="25"
+                HorizontalOptions="Center"
+                >
+                <Button
+                    Text="+"
+                    SemanticProperties.Hint="Add one to the counter!"
+                    Clicked="OnAddClicked"
+                    />
+                <Label
+                    x:Name="CounterLabel"
+                    Text="Counter is on 0!"
+                    SemanticProperties.Hint="Shows counter value!"
+                    />
+                <Button  
+                    Text="-"
+                    SemanticProperties.Hint="Minus one from the counter!"
+                    Clicked="OnMinusClicked"
+                    />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+    </Border>
+</ContentView>
